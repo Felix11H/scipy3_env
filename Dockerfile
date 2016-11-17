@@ -7,4 +7,6 @@ RUN apt-get update
 RUN apt-get install -y python3-pip python3-nose
 RUN pip3 install ipython numpy scipy matplotlib pandas gitpython sumatra 
 
+RUN useradd -ms /bin/bash docker
+
 WORKDIR /home/lab
